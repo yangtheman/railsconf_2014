@@ -43,116 +43,23 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>RailsConf 2014</h1>
-					<h3>What I learned</h3>
+					<h1>Reveal.js</h1>
+					<h3>HTML Presentations Made Easy</h3>
 					<p>
-						<small>Yang Chung</small>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>In most cases, I was like this</h2>
-					<img width="320" src="assets/mind_blown.gif" alt="Mind Blown" />
-					<p class="fragment">Mind Blown!</p>
-				</section>
+					<h2>Heads Up</h2>
+					<p>
+						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
+						support for CSS 3D transforms to see it in its full glory.
+					</p>
 
-				<section>
-					<section>
-						<h2>Opening Keynote Speech by DHH</h2>
-						<img width="320" src="assets/dhh.jpeg" alt="David Heinemeier Hansson"/>
-						<p class="fragment">David Heinemeier Hansson</p>
-						<p class="fragment">Creator of Rails framework</p>
-						<p class="fragment">35 years old</p>
-					</section>
-					<section>
-						<h2>We are software writers</h2>
-						<h3><i>Not computer scientists</i></h3>
-						<ul>
-							<li class="fragment">DHH started programming late (in his 20's).</li>
-							<li class="fragment">He won't be the next person to writer fastest algorithm.</li>
-							<li class="fragment">Linus is real computer scientist. I am not Linus.</li>
-							<li class="fragment"><em>"Science"</em> part of Computer Science seeks ultimate truth and makes writing codes rigid.</li>
-							<li class="fragment"><em>"Science"</em> part also leads to <em>Impostor Syndrome</em>.</li>
-							<li class="fragment">TDD started with good intention, but has become too dogmatic.</li>
-							<li class="fragment">Practice TDD, but not at the expense of writing good software.</li>
-						</ul>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h2>Art of Refactoring</h2>
-						<ol>
-							<li>Intention Revealing Method</li>
-							<li>Special Case Object</li>
-							<li>Replace Method with Method Object</li>
-							<li>Service Object</li>
-						</ol>
-					</section>
-					<section>
-						<h2>Intention Revealing Method</h2>
-						<pre><code>
-def index
-  if current_user && current_user.created_at < (Time.now - 7*24*3600)
-    ...
-  elsif current_user && current_user.created_at > (Time.now - 7*24*3600)
-    ...
-  end
-end
-						</code></pre>
-						<pre class="fragment"><code>
-def index
-  if user_admitted?
-    ...
-  else
-    ...
-  end
-end
-
-private
-
-def user_admitted?
-  current_user && current_user.created_at < (Time.now - 7*24*3600)
-end
-						</code></pre>
-					</section>
-					<section>
-						<h2>Speical Case Objects</h2>
-						<h3>Use symbol</h3>
-						<pre><code>
-Undefined method `email' for nil:NilClass
-						</code></pre>
-						<pre class="fragment"><code>
-def current_user
-  User.find_by_id(params[:id]) || :guest_user
-end
-						</code></pre>
-						<pre class="fragment"><code>
-undefined method `email' for :guest_user:Symbol
-						</code></pre>
-					</section>
-					<section>
-						<h2>Speical Case Objects</h2>
-						<h3>Use speical object</h3>
-						<pre class="fragment"><code>
-class NullUser
-  def email
-    'guest'
-  end
-end
-						</code></pre>
-						<pre class="fragment"><code>
-def current_user
-  User.find(session[:user_id]) || NullUser.new
-end
-						</code></pre>
-						<pre class="fragment"><code>
-"Ohai, #{current_user.email}!"
-						</code></pre>
-					</section>
-					<section>
-						Check out the rest of refactoring <a target="_blank" href="https://github.com/tute/refactoring-workshop">here</a>
-					</section>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
 				</section>
 
 				<!-- Example of nested vertical slides -->
