@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>RailsConf 2014</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -45,9 +45,8 @@
 				<section>
 					<h1>RailsConf 2014</h1>
 					<h3>What I learned</h3>
-					<p>
-						<small>Yang Chung</small>
-					</p>
+					<p><small>Yang Chung</small></p>
+					<p><small><i>Made for folks at Spirent Communications</i></small></p>
 				</section>
 
 				<section>
@@ -76,6 +75,9 @@
 							<li class="fragment">TDD started with good intention, but has become too dogmatic.</li>
 							<li class="fragment">Practice TDD, but not at the expense of writing good software.</li>
 						</ul>
+					</section>
+					<section>
+						Watch the entire speech <a href="http://www.confreaks.com/videos/3315-railsconf-keynote-writing-software">here</a>
 					</section>
 				</section>
 
@@ -199,295 +201,332 @@ Post
 					</section>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Building Technical Education Program In-House</h2>
+						<p><small>By Chuck Lauer Vose</small></p>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
+						<h2>Lightning Talks</h2>
 						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
+							<li class="fragment">30-60 minutes before lunch on Friday</li>
+							<li class="fragment">5-10 minutes talk on any topic</li>
+							<li class="fragment">Demo a product, show off a new gem, inspire others around you</li>
+							<li class="fragment">"If you feed them, they will come"</li>
 						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
+						<h2>Mob Refactoring</h2>
+						<ol>
+							<li class="fragment">Select some code to review</li>
+							<li class="fragment">Select a style or problem to look for</li>
+							<li class="fragment">Rewrite the code together</li>
+							<li class="fragment">Throw out the code afterwards</li>
+							<li class="fragment"><em>Review the code, not the author</em></li>
+						</ol>
+					</section>
+					<section>
+						<h2>Pair Programming</h2>
+						<ol>
+							<li class="fragment">2 brains, one problem</li>
+							<li class="fragment">Trade off of speed for quality</li>
+							<li class="fragment">"Sneaky monitor method"</li>
+							<li class="fragment">"Opt-in workshops"</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Workshops</h2>
+						<ol>
+							<li class="fragment">Choose a theme as a group (refactoring? testing?)</li>
+							<li class="fragment">Find a screencast before workshop</li>
+							<li class="fragment">Watch screencast together</li>
+							<li class="fragment">Show an example of your code</li>
+							<li class="fragment">Split into pairs for 40 min to practice</li>
+							<li class="fragment">Demo progress in last 20 min</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Fishbowl Discussions</h2>
+						<ol>
+							<li class="fragment">Most experienced engineers discuss a difficult problem</li>
+							<li class="fragment">Anyone can listen in over a speaker system (or just stand nearby)</li>
+						</ol>
+					</section>
+					<section>
+						<h2>On-boarding Mentors</h2>
+						<ol>
+							<li class="fragment">Point person for new hire's first 2-4 weeks</li>
+							<li class="fragment">Helps setup machine / get running</li>
+							<li class="fragment">Sets aside time to answer all questions</li>
+							<li class="fragment">Comfort and confidence, not just tech</li>
+						</ol>
+					</section>
+					<section>
+						Complete presentation can be found <a href="https://speakerdeck.com/vosechu/building-technical-education-programs">here</a>
 					</section>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
+					<section>
+						<h2>Better Code Review</h2>
+						<p><small>By Doc Ritezel</small></p>
+					</section>
+					<section>
+						<h2>When code review goes bad</h2>
+						<ol>
+							<li class="fragment">Arguments break out</li>
+							<li class="fragment">Feelings get hurt</li>
+							<li class="fragment">People get fired</li>
+							<li class="fragment">Great engineers leave</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Being Right</h2>
+						<p>Instead of.....<em>"You shouldn't be using four spaces here"</em></p>
+						<h2 class="fragment">Use</h2>
+						<ul>
+							<li class="fragment">Style guide</li>
+							<li class="fragment">Linters</li>
+							<li class="fragment"><a href="https://github.com/bbatsov/rubocop">Rubocop</a> or <a href="http://robots.thoughtbot.com/introducing-hound">Thoughtbot's Hound</a></li>
+							<li class="fragment"><a href="https://codeclimate.com/">Code Climate</a></li>
+							<li class="fragment">SimpleCov</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Generalizing</h2>
+						<p>Instead of.....<em>"Never use #map this way"</em></p>
+						<h2 class="fragment">Use specific language to address the problem code directly</h2>
+						<ul>
+							<li class="fragment">"I think this #map should be an ActiveRecord #select"</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Justifying</h2>
+						<p>Instead of.....<em>"It's a spike, so it's okay for now"</em></p>
+						<p>to the comemnt: <em>"Never use #map this way"</em></p>
+						<h2 class="fragment">Refocus on the code</h2>
+						<ul>
+							<li class="fragment">"What should I write instead?"</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Labeling</h2>
+						<p>Instead of.....<em>"Junior programmer, you wouldn't understand that this isn't idiomatic"</em></p>
+						<h2 class="fragment">Always review the code, not the author</h2>
+						<ul>
+							<li class="fragment">"What I've seen in most Ruby functions is that returns are on their own line."</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Correcting Misperception</h2>
+						<p>Instead of.....<em>"I've been writing Ruby for 5 years"</em></p>
+						<p>to the comemnt: <em>"Junior programmer, you wouldn't understand that this isn't idiomatic"</em></p>
+						<h2 class="fragment">Refocus on the code</h2>
+						<ul>
+							<li class="fragment">"What changes should I make so that this code is more idiomatic?"</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Guessing Game</h2>
+						<p>Instead of.....<em>"How can we make this better?"</em></p>
+						<h2 class="fragment">Reviewer should clearly state their needs to the Author</h2>
+						<ul>
+							<li class="fragment">"I think #define_singleton_method isn't appropriate here. Can we move it into the class?"</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Counter Critiquing</h2>
+						<p>Instead of.....<em>"Well, I saw you commit 50 line fuction yesterday"</em></p>
+						<p>to the comemnt: <em>"I don't like that this function is 10 lines long"</em></p>
+						<h2 class="fragment">Ask for more feedback</h2>
+						<ul>
+							<li class="fragment">How could I rewrite this function to be shorter?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Take a break if stressed</h2>
+						<h3>A few indicators for stress</h3>
+						<ul>
+							<li class="fragment">Physical Discomfort</li>
+							<li class="fragment">Silence</li>
+							<li class="fragment">Exhaustion</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
+					<section>
+						<h2>All the little things</h2>
+						<p><small>By Sandi Metz</small></p>
+					</section>
+					<section>
+						<h2>Who is Sandi Metz and why should I care?</h2>
+						<img class="fragment" src="http://ecx.images-amazon.com/images/I/513q2AOSeAL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg" />
+						<img class="fragment" src="assets/sandi_review.png" />
+						<h3 class="fragment">Master of object oriented programming</h3>
+					</section>
+					<section>
+						<h2>Takeaways</h2>
+						<ul>
+							<li><b>Making codes easy to change is HARD</b></li>
+							<li>To write better OO, write small (make small things)</li>
+							<li>Duplication is far cheaper than wrong abstraction</li>
+							<li>Open/Closed => open for extension/closed for modification (add new behavior, but don’t change existing behavior)</li>
+							<li>Refactor through complexity</li>
+							<li>Refactor to simplicity</li>
+						</ul>
+					</section>
+					<section>
+						You should really check out her entire video <a href="http://www.confreaks.com/videos/3412-roa2014-all-the-little-things">here</a>
+					</section>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
+					<section>
+						<h2>Introducing Pry (or pry-rails)</h2>
+						<p><small>Gem I found in presentation by Joel Turnbull</small></p>
+					</section>
+					<section>
+						<h2>Install</h2>
+						<pre><code>
+# Gemfile
+group :development do
+  gem 'pry-rails'
+end
+
+yangtheman:~/mu/avalanche_app(master)$ rails c
+Loading development environment (Rails 3.2.12)
+[1] pry(main)>
+						</code></pre>
+					</section>
+					<section>
+						<pre><code>
+[1] pry(main)> show-routes
+                                 apitome        /apis                                               Apitome::Engine
+                            user_session POST   /login(.:format)                                    sessions#create
+                    destroy_user_session DELETE /logout(.:format)                                   sessions#destroy
+                 create_admin_user_users POST   /users/create_admin_user(.:format)                  users#create_admin_user
+                   get_super_admin_users GET    /users/get_super_admin(.:format)                    users#get_super_admin
+                 update_and_sign_in_user PUT    /users/:id/update_and_sign_in(.:format)             users#update_and_sign_in
+						</code></pre>
+
+					</section>
+					<section>
+						<pre><code>
+[3] pry(main)> cd Array
+[4] pry(Array):1> ls -m
+Object.methods: yaml_tag
+Array.methods: []  try_convert  wrap
+[5] pry(Array):1> show-method wrap
+
+From: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/activesupport-3.2.12/lib/active_support/core_ext/array/wrap.rb @ line 39:
+Owner: #<Class:Array>
+Visibility: public
+Number of lines: 9
+
+def self.wrap(object)
+  if object.nil?
+    []
+  elsif object.respond_to?(:to_ary)
+    object.to_ary || [object]
+  else
+    [object]
+  end
+end
+[6] pry(Array):1> cd ..
+						</code></pre>
+					</section>
+					<section>
+						<pre><code>
+[8] pry(main)> raise "blah"
+RuntimeError: blah
+from (pry):1:in `__pry__'
+[9] pry(main)> wtf?
+Exception: RuntimeError: blah
+--
+0: (pry):1:in `__pry__'
+1: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:328:in `eval'
+2: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:328:in `evaluate_ruby'
+3: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:278:in `re'
+4: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:254:in `rep'
+5: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:234:in `block (3 levels) in repl'
+6: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:232:in `loop'
+7: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:232:in `block (2 levels) in repl'
+8: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:231:in `catch'
+9: /Users/yangtheman/.rvm/gems/ruby-1.9.3-p385/gems/pry-0.9.12.6/lib/pry/pry_instance.rb:231:in `block in repl'
+						</code></pre>
+					</section>
+					<section>
+						<pre><code>
+[14] pry(AvQueue):1> cd ..
+[15] pry(main)> cd AvQueue
+[16] pry(AvQueue):1> self
+=> AvQueue
+[17] pry(AvQueue):1> first
+=> #<AvQueue av_port_group_ids: ["951c1e45c76d261b1ceef149903d3382"], .....>
+[18] pry(AvQueue):1> cd first
+[19] pry(#<AvQueue>):2> name
+=> "Delta"
+[20] pry(#<AvQueue>):2> cd name
+[21] pry("Delta"):3> upcase
+=> "DELTA"
+[22] pry("Delta"):3> nesting
+Nesting status:
+--
+0. main (Pry top level)
+1. AvQueue
+2. #<AvQueue>
+3. "Delta"
+[31] pry("Delta"):3> cd /
+[32] pry(main)>
+						</code></pre>
+					</section>
+					<section>
+						<pre><code>
+[35] pry(#<AvQueue>):2> ls
+CouchRest::Attributes#methods:
+  []   as_json  clone   dup   empty?       freeze   has_key?  keys   merge!  reject!  to_hash  values
+  []=  clear    delete  each  encode_json  frozen?  inspect   merge  reject  to_a     to_json
+CouchRest::Attachments#methods: fetch_attachment  put_attachment
+CouchRest::Document#methods: copy  database  database=  id  id=  new?  rev  uri
+ActiveModel::Conversion#methods: to_key  to_model  to_param  to_partial_path
+						</code></pre>
+					</section>
+					<section>
+						Check out their documentation <a href="https://github.com/pry/pry/wiki/Setting-up-Rails-or-Heroku-to-use-Pry">here</a>
+					</section>
 				</section>
 
 				<section>
-					<h2>Stellar Links</h2>
+					<section>
+						<h2>Other findings</h2>
+					</section>
+					<section>
+						<h2>Speed up tests with 'parallel_tests' gem</h2>
+						<h3>Run tests parallely on multiple cores.</h3>
+						<p class="fragment"><i>However, it doesn't work with NoSQL databases</i></p>
+					</section>
+					<section>
+						<h2>Capybara is problem for EVERYONE</h2>
+						<ul>
+							<li class="fragment">Make sure page is loaded => Bolt it down with 'have_css'</li>
+							<li class="fragment">Be cautious about race conditions</li>
+							<ul class="fragment">
+								<li>Wait for AJAX to finish with $.active == 0</li>
+								<li>Test thread and server thread are different</li>
+								<li>Use <a href="https://github.com/omadahealth/capybara_sync">capybara_sync</a> Gem</li>
+								<li>Use VCR Gem for external services</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>All the resources are available online</h2>
 					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+						<li>Most presentation videos can be found <a href="http://confreaks.com/events/railsconf">here</a></li>
+						<li>Most speaker decks can be found <a href="https://hackpad.com/Rails-Conf-2014-0gyxnR3pn9O">here</a></li>
 					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
 				</section>
 
 			</div>
